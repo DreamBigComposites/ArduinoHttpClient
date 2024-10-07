@@ -6,8 +6,8 @@
 #define HttpClient_h
 
 #include <Arduino.h>
-#include <IPAddress.h>
-#include "Client.h"
+#include <api/IPAddress.h>
+#include "api/Client.h"
 
 static const int HTTP_SUCCESS =0;
 // The end of the headers has been reached.  This consumes the '\n'
