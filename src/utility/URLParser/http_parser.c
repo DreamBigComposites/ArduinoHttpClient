@@ -1,3 +1,5 @@
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wimplicit-fallthrough"
 #if defined __has_include
 #  if ! __has_include(<utility/http_parser/http_parser.h>) && ! __has_include(<http_parser.h>)
 #    define NO_HTTP_PARSER
@@ -589,3 +591,4 @@ http_parser_version(void) {
 }
 
 #endif // NO_HTTP_PARSER
+#pragma GCC diagnostic pop
